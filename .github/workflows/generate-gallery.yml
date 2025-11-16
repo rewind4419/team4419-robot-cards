@@ -1,0 +1,54 @@
+name: Generate Robot Card Gallery
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Generate HTML gallery
+        run: python generate.py
+
+      - name: Configure git
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Commit generated files
+        run: |
+          git add generated/index.html
+          git diff --staged --quiet || git commit -m "Auto-generate robot card gallery [skip ci]"
+
+      - name: Push changes
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload gallery as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: robot-gallery
+          path: generated/index.html

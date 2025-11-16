@@ -1,0 +1,16 @@
+# Copy this file to create your own robot card!
+# Example: cp cards/template.yaml cards/your-username.yaml
+#
+# Then fill in your information below:
+
+username: "your-github-username"
+robot_name: "My Awesome Robot"
+year: 2025
+signature_mechanism: "Describe your robot's coolest feature"
+ascii_art: |
+     ___
+    |   |
+    |___|
+    0   0
+why_cool: "Explain what makes your design special"
+design_philosophy: "Your approach to robot design (speed vs power, simple vs complex, etc.)"

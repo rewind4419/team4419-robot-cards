@@ -1,0 +1,45 @@
+/*
+ * Additional custom styles for Team 4419 Robot Card Gallery
+ * This file is optional - main styles are embedded in generate.py
+ * Add any team-specific customizations here
+ */
+
+/* FRC Team 4419 Brand Colors */
+:root {
+    --team-primary: #667eea;
+    --team-secondary: #764ba2;
+    --team-accent: #64ffda;
+    --team-dark: #1a1a2e;
+    --team-darker: #16213e;
+}
+
+/* Smooth scrolling for better UX */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Optional: Add team logo or background pattern */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: -1;
+    /* Uncomment and add team logo if desired */
+    /* background: url('../assets/team-logo.png') center/200px no-repeat; */
+}
+
+/* Print styles - in case someone wants to print their card */
+@media print {
+    body {
+        background: white;
+    }
+    .robot-card {
+        page-break-inside: avoid;
+        border: 2px solid #333;
+    }
+}

@@ -1,0 +1,17 @@
+# Vision-based autonomous navigation expert
+username: "zredlined"
+robot_name: "Bumblebee"
+year: 2025
+signature_mechanism: "Multi-camera vision system for autonomous navigation"
+ascii_art: |
+    ╔═══════════════╗
+    ║ ◉  ◉  ◉  ◉  ║
+    ║  QUAD CAMERA ║
+    ║ ◉  [CPU]  ◉  ║
+    ╠═══════════════╣
+    ║   LIDAR 360°  ║
+    ╚═══════════════╝
+       ║║    ║║
+       ╚╝    ╚╝
+why_cool: "Six cameras give 360° field awareness so the robot can navigate around defense automatically, like a self-driving car!"
+design_philosophy: "Redundant sensors mean reliability. If one camera fails, five others keep us on track."
