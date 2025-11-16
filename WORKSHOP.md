@@ -160,7 +160,7 @@ Yes! Press `.` on the repo page for a browser editor.
 ## After Today
 
 You'll use this same workflow for:
-- Robot code (Java/Python)
+- Robot code (C++ (what we use today) or Java or Python)
 - Scouting apps
 - Vision processing
 - Documentation
