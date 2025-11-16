@@ -46,7 +46,7 @@ This is an onboarding project where you'll:
 1. Scroll down to **"Commit new file"**
 2. GitHub will say: *"You can't commit to main because it's protected"*
 3. Select: **"Create a new branch for this commit and start a pull request"**
-4. Name your branch: `add-your-username-card`
+4. Name your branch: `add-your-username-card` (replace 'username' with your github username)
 5. Click **"Propose new file"**
 
 ### Step 4: Create Pull Request
@@ -58,7 +58,7 @@ This is an onboarding project where you'll:
 
 ### Step 5: Check That Your Card Works!
 
-**Important:** After creating your PR, make sure the build passes!
+**Important:** After creating your PR, make sure the build passes! We do this by running an automated set of tests inside Github called "Actions".
 
 1. On your Pull Request page, look for the **"Checks"** section
 2. You should see `generate-and-deploy` running (yellow circle)
