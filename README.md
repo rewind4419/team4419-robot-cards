@@ -22,61 +22,117 @@ This is an onboarding project where you'll:
 
 ### Step 0: 🚀 Share your GitHub username in #programming
 
-This needs to happen first so we can add you to the programming team! Once you’re added, you can start with Step 1 below.
+1. Post your GitHub username in Discord
+2. Wait for a mentor to add you to the `Programming` team
+3. **Check your email!** You'll get an invite to join the `rewind4419` organization
+4. Click the link in the email and accept the invitation
+5. Once accepted, you can start with Step 1 below
 
-### Step 1: Open the Template
+### Step 1: Create Your Card File
 
-1. Go to [`cards/template.yaml`](cards/template.yaml) in this repo
-2. Click the file to view it
-3. Copy the entire contents
+1. Go to the main repo page: https://github.com/rewind4419/team4419-robot-cards
+2. Click **"+"** (Add file button) → **"Create new file"**
+3. Name your file: `cards/your-username.yaml`
+   - Example: `cards/zredlined.yaml`
+   - Replace `your-username` with your actual GitHub username!
 
-### Step 2: Create Your Card File
+### Step 2: Add Your Robot Design
 
-1. Go back to the main repo page
-2. Click **"+"** → **"Create new file"**
-3. Name your file: `cards/your-username.yaml` (you're telling it to create a new config file, in the "cards" folder. Make sure to replace `your-username` with your actual GitHub username- e.g. `cards/zredlined.yaml`)
-4. Paste the template contents
-5. Edit the fields in the config file with your robot design. Make sure to maintain the structure and fields defined in the file so it will work correctly!:
-   - **username**: Your GitHub username
-   - **robot_name**: Give your robot a cool name (80s references encouraged!)
-   - **year**: Current competition year (2026)
-   - **signature_mechanism**: What makes your robot special?
-   - **ascii_art**: Draw your robot with text characters (use AI to help!)
-   - **why_cool**: Why is your design awesome?
-   - **design_philosophy**: Your approach to robot design
+Copy this template and fill in your information:
 
-### Step 3: Commit to a New Branch
+```yaml
+# Your robot design card
+username: "your-github-username"
+robot_name: "My Awesome Robot"
+year: 2026
+signature_mechanism: "Describe your robot's coolest feature"
+ascii_art: |
+     ___
+    |   |
+    |___|
+    0   0
+why_cool: "Explain what makes your design special"
+design_philosophy: "Your approach to robot design (speed vs power, simple vs complex, etc.)"
+```
+
+**Fill in each field:**
+- `username` - Your GitHub username (in quotes)
+- `robot_name` - A cool name for your robot
+- `year` - 2026
+- `signature_mechanism` - What makes your robot special?
+- `ascii_art` - Keep it simple for now (we'll improve it in the next step!)
+- `why_cool` - Why is your design awesome?
+- `design_philosophy` - Your design approach
+
+### Step 3: First Commit - Create Your Branch
 
 1. Scroll down to **"Commit new file"**
 2. GitHub will say: *"You can't commit to main because it's protected"*
 3. Select: **"Create a new branch for this commit and start a pull request"**
-4. Name your branch: `add-your-username-card` (replace 'username' with your github username)
-5. Click **"Propose new file"**
+4. **Branch name:** `add-your-username-card` (replace with your username - remember this!)
+5. **Commit message:** `Add robot card for your-username`
+6. Click **"Propose new file"**
+7. **STOP - Don't create the PR yet!**
 
-### Step 4: Create Pull Request
+### Step 4: Go Back to Your Branch to Make More Edits
 
-1. GitHub will take you to the Pull Request page
-2. Title: `Add robot card for @your-username`
-3. Add a brief description of your robot (optional)
-4. Click **"Create pull request"**
+1. Go back to the repo home: https://github.com/rewind4419/team4419-robot-cards
+2. Click the **branch dropdown** (button that says "main" with a ▼)
+3. Find and click your branch: `add-your-username-card`
+4. Click the `cards` folder
+5. Click your file: `your-username.yaml`
 
-### Step 5: Check That Your Card Works!
+You're now looking at your file on your branch!
 
-**Important:** After creating your PR, make sure the build passes! We do this by running an automated set of tests inside Github called "Actions".
+### Step 5: Improve Your ASCII Art with AI
 
-1. On your Pull Request page, look for the **"Checks"** section
-2. You should see `generate-and-deploy` running (yellow circle)
-3. Wait for it to complete (should take ~30 seconds)
-4. **Look for a green checkmark ✓** - This means your YAML file is valid!
-5. **If you see a red X ✗** - Click "Details" to see what's wrong (usually a formatting issue)
+Let's make your robot look cooler with AI help!
 
-**Don't submit for review until you see the green checkmark!** This ensures your card will work when merged.
+1. Open your favorite AI (ChatGPT, Claude, etc.)
+2. Copy this prompt and fill in your robot description:
 
-### Step 6: Wait for Review
+```
+Create ASCII art for my robot design. Here's my robot concept: [DESCRIBE YOUR ROBOT HERE].
 
-A Programming Lead or Mentor will review your card and approve it!
+Please use these special characters for a cooler look:
+═ ║ ╔ ╗ ╚ ╝ ╠ ╣ ╦ ╩ ╬
+□ ■ ◉ ● ○ ◈ ◆ ▓ ▒ ░
 
-### Step 7: Merge & See It Live!
+Keep it under 40 characters wide and around 8-10 lines tall.
+```
+
+3. Copy the ASCII art the AI generates
+
+### Step 6: Update Your Card with Better ASCII Art
+
+1. From your file view, click the **pencil icon (✏️)** to edit
+2. Replace the simple `ascii_art` section with your new AI-generated art
+3. Scroll down to **"Commit changes"**
+4. **Commit message:** `Improve ASCII art for robot design`
+5. Make sure **"Commit directly to the `add-your-username-card` branch"** is selected
+6. Click **"Commit changes"**
+
+### Step 7: Create Pull Request
+
+Now you're ready to submit!
+
+1. Go back to the repo home: https://github.com/rewind4419/team4419-robot-cards
+2. You should see a yellow banner: **"add-your-username-card had recent pushes"**
+3. Click the green **"Compare & pull request"** button
+4. **Title:** `Add robot card for @your-username`
+5. Add a brief description (optional)
+6. Click **"Create pull request"**
+
+### Step 8: Wait for Review
+
+A Programming Lead or Mentor will review your card and approve it! They'll check:
+- Your YAML formatting is correct
+- All required fields are filled in
+- Your ASCII art looks good
+
+If they request changes, just edit your file on your branch and commit again - the PR will update automatically!
+
+### Step 9: Merge & See It Live!
 
 Once approved, click **"Merge pull request"** and your card will appear on the live gallery within a couple minutes:
 
