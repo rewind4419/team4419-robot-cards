@@ -33,10 +33,10 @@ This needs to happen first so we can add you to the programming team! Once you�
 ### Step 2: Create Your Card File
 
 1. Go back to the main repo page
-2. Click **"Add file"** → **"Create new file"**
-3. Name your file: `cards/your-username.yaml` (replace with your actual GitHub username- e.g. cards/zredlined.yaml)
+2. Click **"+"** → **"Create new file"**
+3. Name your file: `cards/your-username.yaml` (you're telling it to create a new config file, in the "cards" folder. Make sure to replace `your-username` with your actual GitHub username- e.g. `cards/zredlined.yaml`)
 4. Paste the template contents
-5. Edit the fields with your robot design:
+5. Edit the fields in the config file with your robot design. Make sure to maintain the structure and fields defined in the file so it will work correctly!:
    - **username**: Your GitHub username
    - **robot_name**: Give your robot a cool name (80s references encouraged!)
    - **year**: Current competition year (2026)
