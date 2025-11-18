@@ -1,23 +1,18 @@
-# Copy this file to create your own robot card!
-# Example: cp cards/template.yaml cards/your-username.yaml
-#
-# Then fill in your information below:
-
 username: "csailor28"
 robot_name: "Rebel Bot"
 year: 2026
 signature_mechanism: "multitool"
 ascii_art: |
-  ╔════════════════╗
-  ║   ◉  ▓▓▓▓  ◉   ║
-  ║   ▒▒  ■■  ▒▒   ║
+        ╔════════════════╗
+        ║   ◉  ▓▓▓▓  ◉   ║
+        ║   ▒▒  ■■  ▒▒   ║
   ╔═════╣      ◈◈        ╠═════╗
   ║     ║   ○  ▓▓  ○     ║     ║
   ║     ║  ◆◆  ░░  ◆◆    ║     ║
   ║     ║     □□□        ║     ║
   ╚═════╩══════╦═══════  ╩═════╝
-  ▓║▓
-  ▓║▓
+       ▓║▓               ▓║▓
+
 
 why_cool: "can hack into any of the empires computer systems"
 design_philosophy: "Complexity and Intelligence over ability to navigate diverse terrain"
