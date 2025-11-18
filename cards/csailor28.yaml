@@ -1,9 +1,9 @@
-username: "csailor28"
-robot_name: "Rebel Bot"
+username: csailor28
+robot_name: Rebel Bot
 year: 2026
-signature_mechanism: "multitool"
+signature_mechanism: multitool
 ascii_art: |
-        ╔════════════════╗
+  -     ╔════════════════╗
         ║   ◉  ▓▓▓▓  ◉   ║
         ║   ▒▒  ■■  ▒▒   ║
   ╔═════╣      ◈◈        ╠═════╗
@@ -12,7 +12,5 @@ ascii_art: |
   ║     ║     □□□        ║     ║
   ╚═════╩══════╦═══════  ╩═════╝
        ▓║▓               ▓║▓
-
-
-why_cool: "can hack into any of the empires computer systems"
-design_philosophy: "Complexity and Intelligence over ability to navigate diverse terrain"
+why_cool: can hack into any of the empires computer systems
+design_philosophy: Complexity and Intelligence over ability to navigate diverse terrain
