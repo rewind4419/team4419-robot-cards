@@ -4,9 +4,16 @@ robot_name: "My Awesome Robot"
 year: 2026
 signature_mechanism: "It can do flips or spin in circles"
 ascii_art: |
-     ___
-    |   |
-    |___|
-    0   0
+        ╔════════╗
+        ║  ◉  ◉  ║
+        ║   ■■   ║
+       ╔╩════════╩╗
+       ║   ◈◇◈    ║
+       ║   ▒  ▒   ║
+       ║  ●    ●  ║
+       ║   ░██░   ║
+       ╚════╦═════╝
+            ║ ║
+
 why_cool: "Because it just is"
 design_philosophy: "It's good at suprising people"
