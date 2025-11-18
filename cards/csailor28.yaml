@@ -8,9 +8,16 @@ robot_name: "Rebel Bot"
 year: 2026
 signature_mechanism: "multitool"
 ascii_art: |
-     ___
-    |   |
-    |___|
-    0   0
+           ╔════════════════╗
+           ║   ◉  ▓▓▓▓  ◉   ║
+           ║   ▒▒  ■■  ▒▒   ║
+     ╔═════╣      ◈◈        ╠═════╗
+     ║     ║   ○  ▓▓  ○     ║     ║
+     ║     ║  ◆◆  ░░  ◆◆    ║     ║
+     ║     ║     □□□        ║     ║
+     ╚═════╩══════╦═══════  ╩═════╝
+                 ▓║▓
+                 ▓║▓
+
 why_cool: "can hack into any of the empires computer systems"
 design_philosophy: "Complexity and Intelligence over ability to navigate diverse terrain"
